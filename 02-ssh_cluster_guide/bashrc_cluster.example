@@ -1,0 +1,27 @@
+# ~/.bashrc additions for Computational Chemistry Group on MSU HPC² clusters
+# Source this file from ~/.bashrc: source ~/bashrc_cluster.example
+
+# 1. Safe default OpenMP threading on login nodes (prevent accidental 64-core login node use!)
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+
+# 2. Point PySCF and scratch directories to fast node-local storage when inside a Slurm job
+export PYSCF_MAX_MEMORY=16000
+export PYSCF_TMPDIR="${TMPDIR:-/tmp}/${USER}"
+
+# 3. Convenient Slurm & Scratch aliases
+alias sq='squeue -u $USER -o "%.10i %.12P %.24j %.8T %.10M %.10l %.6D %R"'
+alias sacct_today='sacct --starttime=$(date +%Y-%m-%d) -o JobID,JobName%20,Partition,State,Elapsed,MaxRSS'
+alias cdwork='cd /work/${GROUP_ACCOUNT:-chem_theory}/${USER}'
+alias cdscratch='cd ${TMPDIR:-/tmp}'
+
+# 4. Initialize Miniforge / Conda environment on demand
+activate_qchem() {
+    if [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
+        source "$HOME/miniforge3/etc/profile.d/conda.sh"
+        conda activate qchem-onboarding
+    else
+        echo "Miniforge3 not found in $HOME/miniforge3"
+    fi
+}

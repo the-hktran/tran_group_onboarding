@@ -1,0 +1,23 @@
+======================================================================
+ Quantum Chemistry SCF Driver (RHF / def2-TZVP)
+ Molecule: [Fe(H2O)6]2+ High-Spin Complex (RHF Trial Wavefunction)
+======================================================================
+Nuclear Repulsion Energy:    312.44819050 Eh
+Basis Set:                     def2-TZVP (185 AOs, 84 electrons)
+
+Starting Roothaan-Hall SCF Cycle (No damping, RHF closed-shell guess)...
+SCF Iteration   1: E_tot =  -1718.10492011 Eh   dE = -1.72e+03   RMS_grad = 4.92e-01
+SCF Iteration   2: E_tot =  -1716.88201944 Eh   dE = +1.22e+00   RMS_grad = 6.14e-01
+SCF Iteration   3: E_tot =  -1719.01248810 Eh   dE = -2.13e+00   RMS_grad = 5.40e-01
+SCF Iteration   4: E_tot =  -1716.41092833 Eh   dE = +2.60e+00   RMS_grad = 7.02e-01
+SCF Iteration   5: E_tot =  -1718.95102940 Eh   dE = -2.54e+00   RMS_grad = 5.88e-01
+SCF Iteration   6: E_tot =  -1716.50918200 Eh   dE = +2.44e+00   RMS_grad = 6.91e-01
+SCF Iteration   7: E_tot =  -1718.92001122 Eh   dE = -2.41e+00   RMS_grad = 5.79e-01
+SCF Iteration   8: E_tot =  -1716.55190211 Eh   dE = +2.37e+00   RMS_grad = 6.84e-01
+SCF Iteration   9: E_tot =  -1718.89019200 Eh   dE = -2.34e+00   RMS_grad = 5.71e-01
+SCF Iteration  10: E_tot =  -1716.58901245 Eh   dE = +2.30e+00   RMS_grad = 6.75e-01
+
+WARNING: Maximum SCF iterations (10) reached without convergence!
+Hint: Open-shell d6 transition metal complex requires UHF/ROHF and level shifting.
+Total Wall Time: 14.70 s
+======================================================================

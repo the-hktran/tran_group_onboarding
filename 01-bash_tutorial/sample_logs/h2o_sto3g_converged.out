@@ -1,0 +1,20 @@
+======================================================================
+ Quantum Chemistry SCF Driver (RHF / STO-3G)
+ Molecule: H2O (C2v equilibrium geometry)
+======================================================================
+Nuclear Repulsion Energy:      9.18953412 Eh
+Basis Set:                     STO-3G (7 AOs, 10 electrons)
+
+Starting Roothaan-Hall SCF Cycle (Pulay DIIS enabled)...
+SCF Iteration   1: E_tot =    -74.72194011 Eh   dE = -7.47e+01   RMS_grad = 1.42e-01
+SCF Iteration   2: E_tot =    -74.95810244 Eh   dE = -2.36e-01   RMS_grad = 2.15e-02
+SCF Iteration   3: E_tot =    -74.96281905 Eh   dE = -4.72e-03   RMS_grad = 2.84e-03
+SCF Iteration   4: E_tot =    -74.96298812 Eh   dE = -1.69e-04   RMS_grad = 3.11e-04
+SCF Iteration   5: E_tot =    -74.96302298 Eh   dE = -3.49e-05   RMS_grad = 1.92e-05
+SCF Iteration   6: E_tot =    -74.96302314 Eh   dE = -1.60e-07   RMS_grad = 4.08e-07
+SCF Iteration   7: E_tot =    -74.96302314 Eh   dE = -1.12e-10   RMS_grad = 8.45e-09
+
+*** SCF CONVERGED IN 7 ITERATIONS ***
+Final SCF Energy: -74.96302314 Eh
+Total Wall Time: 0.42 s
+======================================================================

@@ -1,0 +1,30 @@
+# ~/.ssh/config template for Mississippi State University HPC² clusters
+# Copy relevant blocks into ~/.ssh/config and set permissions: chmod 600 ~/.ssh/config
+
+Host orion
+    HostName orion-login.hpc.msstate.edu
+    User your_netid
+    IdentityFile ~/.ssh/id_ed25519
+    ControlMaster auto
+    ControlPath ~/.ssh/cm-%r@%h:%p
+    ControlPersist 4h
+    ServerAliveInterval 60
+    ServerAliveCountMax 5
+
+Host hercules
+    HostName hercules-login.hpc.msstate.edu
+    User your_netid
+    IdentityFile ~/.ssh/id_ed25519
+    ControlMaster auto
+    ControlPath ~/.ssh/cm-%r@%h:%p
+    ControlPersist 4h
+    ServerAliveInterval 60
+
+Host morrill
+    HostName morrill-login.hpc.msstate.edu
+    User your_netid
+    IdentityFile ~/.ssh/id_ed25519
+    ControlMaster auto
+    ControlPath ~/.ssh/cm-%r@%h:%p
+    ControlPersist 4h
+    ServerAliveInterval 60

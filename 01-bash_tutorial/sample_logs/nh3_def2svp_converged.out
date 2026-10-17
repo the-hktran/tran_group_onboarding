@@ -1,0 +1,21 @@
+======================================================================
+ Quantum Chemistry SCF Driver (RHF / def2-SVP)
+ Molecule: NH3 (C3v pyramidal geometry)
+======================================================================
+Nuclear Repulsion Energy:     11.97140823 Eh
+Basis Set:                     def2-SVP (29 AOs, 10 electrons)
+
+Starting Roothaan-Hall SCF Cycle (Pulay DIIS enabled)...
+SCF Iteration   1: E_tot =    -55.89104420 Eh   dE = -5.59e+01   RMS_grad = 1.88e-01
+SCF Iteration   2: E_tot =    -56.14209184 Eh   dE = -2.51e-01   RMS_grad = 3.12e-02
+SCF Iteration   3: E_tot =    -56.15389012 Eh   dE = -1.18e-02   RMS_grad = 4.50e-03
+SCF Iteration   4: E_tot =    -56.15447109 Eh   dE = -5.81e-04   RMS_grad = 6.20e-04
+SCF Iteration   5: E_tot =    -56.15449833 Eh   dE = -2.72e-05   RMS_grad = 7.15e-05
+SCF Iteration   6: E_tot =    -56.15449918 Eh   dE = -8.50e-07   RMS_grad = 3.90e-06
+SCF Iteration   7: E_tot =    -56.15449921 Eh   dE = -3.00e-08   RMS_grad = 1.45e-07
+SCF Iteration   8: E_tot =    -56.15449921 Eh   dE = -2.10e-10   RMS_grad = 9.10e-09
+
+*** SCF CONVERGED IN 8 ITERATIONS ***
+Final SCF Energy: -56.15449921 Eh
+Total Wall Time: 1.85 s
+======================================================================

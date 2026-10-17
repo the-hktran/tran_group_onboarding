@@ -34,3 +34,4 @@ High-performance computing (HPC) clusters run Linux without a graphical desktop.
 ## 3. Example Project 1: Automated SCF Log Scraper (`parse_scf_logs.sh`)
 
 Open `parse_scf_logs.sh` and complete the `# TODO` blocks so the script loops over a directory of `.out` log files, checks whether `SCF CONVERGED` is present, extracts the final energy (in $\text{E}_\text{h}$), counts the number of SCF cycles, and writes a sorted CSV report (`summary_energies.csv`) while flagging unconverged jobs.
+

@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files (rename to .gitignore in repository root)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Quantum chemistry & electronic structure scratch files
+*.chk
+*.fchk
+*.gbw
+*.tmp
+*.int
+*.dat
+fort.*
+timer.dat
+
+# Large NumPy / HDF5 intermediate arrays (keep reference *_integrals.npz)
+*.npy
+!h2o_sto3g_integrals.npz
+!heh_plus_sto3g_integrals.npz
+*.h5
+
+# Slurm & cluster batch logs
+slurm-*.out
+slurm-*.err
+core.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment & IDE directories
+.env
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
